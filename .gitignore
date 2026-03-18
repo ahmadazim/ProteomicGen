@@ -1,0 +1,31 @@
+# Notebooks
+*.ipynb
+
+# External clone
+external/scldm_editted/
+external/scldm/
+
+# Data and generated artifacts
+data/*
+!data/.gitkeep
+
+generated/*
+!generated/.gitkeep
+
+models/*
+!models/.gitkeep
+
+scldm_proteomics_run/*
+!scldm_proteomics_run/.gitkeep
+
+# Common large artifacts
+*.h5ad
+*.pt
+*.pth
+*.ckpt
+*.tsv
+*.csv
+*.parquet
+*.png
+*.pdf
+*.log
