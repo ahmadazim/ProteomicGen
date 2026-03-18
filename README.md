@@ -35,18 +35,35 @@ By default, `scripts/submit.sh` expects:
 
 The default latent and output names used by the pipeline are created automatically.
 
-## Environment Setup
+## Getting Started
 
-Clone upstream `scLDM` into `external/scldm`, then install its dependencies in your environment.
+This repository is a proteomics workflow layered on top of upstream `scLDM`. Before running anything here, you must first clone the upstream repository and follow its installation/setup instructions.
 
-Example:
+1. Clone upstream `scLDM` into `external/scldm`:
 
 ```bash
-conda create -n scldm python=3.11 -y
-conda activate scldm
-pip install -e external/scldm
-pip install "cellarium-ml @ git+https://github.com/cellarium-ai/cellarium-ml.git"
+git clone https://github.com/czi-ai/scldm.git external/scldm
 ```
+
+2. Read and follow the upstream setup instructions in the `scLDM` repository README before continuing.
+3. Only after upstream `scLDM` is installed and working should you run the scripts in this repository.
+
+Upstream repository:
+
+- `https://github.com/czi-ai/scldm`
+
+In particular, use the upstream project for:
+
+- environment creation
+- dependency installation
+- `cellarium-ml` installation
+- any base `scLDM` training/runtime requirements
+
+After that, return to this repository and run the proteomics-specific wrapper scripts described below.
+
+## Environment Setup
+
+Once upstream `scLDM` has been cloned and installed following its own instructions, use the same environment for this repository.
 
 ## End-To-End Run
 
